@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陳渝茜｜教育工作者・課程設計・AI 教學應用</title>
+    <style>
+        :root {
+            --primary-color: #2c5282;
+            --secondary-color: #3182ce;
+            --accent-color: #e2e8f0;
+            --text-color: #2d3748;
+            --bg-color: #f7fafc;
+            --white: #ffffff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        body {
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        nav {
+            background: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: var(--white);
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+        .about-text {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .timeline-item {
+            margin-bottom: 15px;
+        }
+        .timeline-item strong {
+            color: var(--secondary-color);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-card {
+            background: var(--bg-color);
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary-color);
+        }
+        .service-card h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        ul.portfolio-list {
+            padding-left: 20px;
+        }
+        ul.portfolio-list li {
+            margin-bottom: 10px;
+        }
+        .contact-box {
+            text-align: center;
+            background: linear-gradient(135deg, #ebf8ff, #e2e8f0);
+            padding: 40px;
+            border-radius: 8px;
+        }
+        .contact-box p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: var(--secondary-color);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        @media(max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>陳渝茜</h1>
+        <p>教育工作者・課程設計・AI 教學應用</p>
+    </header>
+
+    <nav>
+        <a href="#about">關於我</a>
+        <a href="#services">合作項目</a>
+        <a href="#portfolio">過往成果</a>
+        <a href="#contact">聯絡我們</a>
+    </nav>
+
+    <main>
+        <!-- 關於我 -->
+        <section id="about">
+            <h2>關於我</h2>
+            <p class="about-text">
+                六年教育現場經驗，曾任台南偏鄉國小教師（TFT 第六屆）、新北市石門實驗國中九年級導師，並於國發會雙語政策專案辦公室擔任專員一年。現為優歷平台校園合作講師與性歸由你 SCUni 校園性教育陪跑計畫對外關係總監。
+            </p>
+            <p class="about-text">
+                我相信教育的改變不會發生在單一堂精彩的課裡，而是發生在系統裡。我特別關注偏鄉與資源相對不足的學校，AI 工具在這裡的意義，不是讓教學變炫，而是讓一位老師在有限時間裡，能為不同的孩子多做一點。
+            </p>
+            <div style="margin-top: 20px;">
+                <h3 style="margin-bottom: 10px; color: var(--primary-color);">經歷摘要</h3>
+                <div class="timeline-item"><strong>現職</strong>：優歷平台校園合作講師（2024 至今）</div>
+                <div class="timeline-item"><strong>現職</strong>：性歸由你 SCUni 校園性教育陪跑計畫－對外關係總監（2026 至今）</div>
+                <div class="timeline-item"><strong>經歷</strong>：國發會雙語政策專案辦公室專員</div>
+                <div class="timeline-item"><strong>經歷</strong>：新北市石門實驗國中九年級導師、台南偏鄉國小教師（TFT 第六屆）</div>
+            </div>
+        </section>
+
+        <!-- 合作項目 -->
+        <section id="services">
+            <h2>我能提供的合作</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>AI 融入教學工作坊</h3>
+                    <p>針對國高中教師，分享如何用 AI 工具設計課程、產出教材與規劃生涯探索，提供教室裡真正用得到的做法。</p>
+                </div>
+                <div class="service-card">
+                    <h3>學習歷程與生涯探索課程</h3>
+                    <p>結合優歷平台經驗，帶領高中生從整理經歷、找到主軸到完成具說服力的學習歷程檔案。</p>
+                </div>
+                <div class="service-card">
+                    <h3>SEL 與班級經營分享</h3>
+                    <p>分享運用幹部任務、班級競賽與共同晚自習培養學生自我覺察與成長型思維，並轉化棘手親師關係。</p>
+                </div>
+                <div class="service-card">
+                    <h3>實驗教育課程設計顧問</h3>
+                    <p>協助學校或團隊從零規劃跨領域課程（如山野、食農、模擬聯合國等），並串聯外部講師資源。</p>
+                </div>
+                <div class="service-card" style="grid-column: 1 / -1;">
+                    <h3>校園性教育陪跑（性歸由你 SCUni）</h3>
+                    <p>以學校為本、一整個學年的陪跑模式，協助建立教師、行政與家長談性的共同語言與流程（115 學年度試跑中）。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 過往成果 -->
+        <section id="portfolio">
+            <h2>過往成果</h2>
+            <ul class="portfolio-list">
+                <li><strong>班級經營與 SEL</strong>：以 SEL 核心經營班級與成長型思維，一學期後八成學生更看重努力與過程而非成績。</li>
+                <li><strong>融合教育與親師溝通</strong>：實踐差異化教學協助特教生融入，並成功將對立家長轉化為學校合作夥伴。</li>
+                <li><strong>實驗教育統整</strong>：統整執行 9 門實驗教育課程，邀集 6 位以上業界講師，帶領學生募款 12.5 萬完成畢業環島。</li>
+                <li><strong>國家級專案</strong>：於國發會期間建置「展會節慶活動融入雙語元素」計畫徵件與審查制度，計畫總經費兩千萬。</li>
+                <li><strong>最新教學實踐</strong>：2026 年暑假自行設計並執行「AI 學涯探索」課程，帶領高中生以 AI 工具釐清職涯方向。</li>
+            </ul>
+        </section>
+
+        <!-- 聯絡我們 -->
+        <section id="contact">
+            <h2>聯絡與預約</h2>
+            <div class="contact-box">
+                <p>希望協助更多老師把 AI 工具真正用進課堂。若您的學校或團隊正在探索這件事，歡迎與我聯繫！</p>
+                <a href="mailto:example@email.com" class="btn">立即發信聯繫</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 陳渝茜 Yu-Chien Chen. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
